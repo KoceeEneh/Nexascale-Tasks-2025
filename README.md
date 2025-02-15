@@ -9,6 +9,9 @@ This is a growing tech company that provides cloud-based services to clients. re
 
 this project, records detailed step to step approach on how i was able to carry out my tasks as a linux adminstrator.
 
+## Requirments
+- linux OS
+
 ## Challanges
 
 ### TASK 1 - User and Role managements 
