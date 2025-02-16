@@ -22,11 +22,7 @@ The company recently hired five new developers who need access to the developmen
 
 ```bash
 
-sudo adduser clinton
-sudo adduser gospel
-sudo adduser soma
-sudo adduser daniel
-sudo adduser destiny
+sudo adduser user_name
 ```
 
 output
@@ -40,6 +36,30 @@ output
 <img width="618" alt="Screenshot 2025-02-16 at 20 49 09" src="https://github.com/user-attachments/assets/d15703b2-bd51-4851-9e60-dbf97e17acfe" />
 
 <img width="628" alt="Screenshot 2025-02-16 at 20 49 35" src="https://github.com/user-attachments/assets/6c71aa66-1cfd-49bc-b7aa-09fe6a8fd49e" />
+
++ Step 2 - adding them to a group
+first create a group
+```bash
+sudo addgroup group_name
+```
+
+output
+<img width="621" alt="Screenshot 2025-02-16 at 23 39 18" src="https://github.com/user-attachments/assets/232cdeef-d925-4ac8-8ca2-f21db68f7b84" />
+
+after creating the group,you add them to it.
+```bash
+sudo usermod -aG group_name user_name
+```
+output
+<img width="622" alt="Screenshot 2025-02-16 at 23 39 32" src="https://github.com/user-attachments/assets/d18dd340-d44c-4cb5-b6ad-e9b5cdfaee68" />
+
+lastly,verify that they are already in the group
+```bash
+groups user_name
+```
+output
+<img width="620" alt="Screenshot 2025-02-16 at 23 40 13" src="https://github.com/user-attachments/assets/f14e2553-bbdb-4cc8-8443-d38a076ca7d0" />
+
 
 
 2.  Ensureing they have read and execute permission for _/var/www/project_ but cannot modify files
