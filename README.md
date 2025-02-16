@@ -61,10 +61,37 @@ groups user_name
 output
 <img width="620" alt="Screenshot 2025-02-16 at 23 40 13" src="https://github.com/user-attachments/assets/f14e2553-bbdb-4cc8-8443-d38a076ca7d0" />
 
-
-
 2.  Ensureing they have read and execute permission for _/var/www/project_ but cannot modify files
-+ Step 1
+
++ Step 1 - change the ownership of the directory so that i would belong to the group.
+
+```bash
+sudo chown :group_name folder_path
+```
+
+output
+<img width="597" alt="Screenshot 2025-02-17 at 00 51 14" src="https://github.com/user-attachments/assets/ac457407-9a00-41b8-bfc6-382c39be895e" />
+
++ Step 2 - Then set the 'read' and 'execute' permission to the group
+
+```bash
+sudo chmod 750 folder_path
+```
+
+output
+<img width="601" alt="Screenshot 2025-02-17 at 00 51 46" src="https://github.com/user-attachments/assets/56dc2120-3de6-4d73-b4f7-130be0a202a3" />
+
+to verify if it works enterr this command
+```bash
+sudo ls -ld
+```
+
+output
+<img width="591" alt="Screenshot 2025-02-17 at 00 52 14" src="https://github.com/user-attachments/assets/555adf71-b82d-4679-a2d1-e1b346be53b8" />
+
+this lists the permissions assigned to owner.
+drwxr-x--- : owner has full permission, group has 'read' and 'execute' perission.
+
 3.  Restricting SSH access for two of them, who should only log in locally.
 + Step 1
 
