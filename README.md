@@ -18,14 +18,30 @@ this project, records detailed step to step approach on how i was able to carry 
 The company recently hired five new developers who need access to the development server. Your task is to:
 
 1.  Creating user accounts for them and add them to the developers group
-+ Step 1 - added five users 
-```
++ Step 1 - added five users
+
+```bash
+
 sudo adduser clinton
 sudo adduser gospel
 sudo adduser soma
 sudo adduser daniel
 sudo adduser destiny
 ```
+
+output
+
+<img width="584" alt="Screenshot 2025-02-16 at 20 48 00" src="https://github.com/user-attachments/assets/f730553a-dd9c-43ab-8611-65f446c10d4f" />
+
+<img width="579" alt="Screenshot 2025-02-16 at 20 48 23" src="https://github.com/user-attachments/assets/7d48c6c0-91ea-439b-973d-d03f7c950672" />
+
+<img width="614" alt="Screenshot 2025-02-16 at 20 48 43" src="https://github.com/user-attachments/assets/fbadd58e-212d-4067-8365-45b16c2a9a94" />
+
+<img width="618" alt="Screenshot 2025-02-16 at 20 49 09" src="https://github.com/user-attachments/assets/d15703b2-bd51-4851-9e60-dbf97e17acfe" />
+
+<img width="628" alt="Screenshot 2025-02-16 at 20 49 35" src="https://github.com/user-attachments/assets/6c71aa66-1cfd-49bc-b7aa-09fe6a8fd49e" />
+
+
 2.  Ensureing they have read and execute permission for _/var/www/project_ but cannot modify files
 + Step 1
 3.  Restricting SSH access for two of them, who should only log in locally.
