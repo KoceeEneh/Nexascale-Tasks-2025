@@ -31,7 +31,7 @@ The company recently hired five new developers who need access to the developmen
 sudo adduser user_name
 ```
 
-output
+### output
 
 <img width="584" alt="Screenshot 2025-02-16 at 20 48 00" src="https://github.com/user-attachments/assets/f730553a-dd9c-43ab-8611-65f446c10d4f" />
 
@@ -56,7 +56,7 @@ first create a group
 sudo addgroup group_name
 ```
 
-output
+### output
 
 <img width="621" alt="Screenshot 2025-02-16 at 23 39 18" src="https://github.com/user-attachments/assets/232cdeef-d925-4ac8-8ca2-f21db68f7b84" />
 
@@ -66,7 +66,7 @@ after creating the group,you add them to it.
 sudo usermod -aG group_name user_name
 ```
 
-output
+### output
 
 <img width="622" alt="Screenshot 2025-02-16 at 23 39 32" src="https://github.com/user-attachments/assets/d18dd340-d44c-4cb5-b6ad-e9b5cdfaee68" />
 
@@ -76,7 +76,7 @@ lastly,verify that they are already in the group
 groups user_name
 ```
 
-output
+### output
 
 <img width="620" alt="Screenshot 2025-02-16 at 23 40 13" src="https://github.com/user-attachments/assets/f14e2553-bbdb-4cc8-8443-d38a076ca7d0" />
 
@@ -88,7 +88,8 @@ output
 sudo chown :group_name folder_path
 ```
 
-output
+### output
+
 <img width="597" alt="Screenshot 2025-02-17 at 00 51 14" src="https://github.com/user-attachments/assets/ac457407-9a00-41b8-bfc6-382c39be895e" />
 
 + Step 2 - Then set the 'read' and 'execute' permission to the group
@@ -97,7 +98,7 @@ output
 sudo chmod 750 folder_path
 ```
 
-output
+### output
 
 <img width="601" alt="Screenshot 2025-02-17 at 00 51 46" src="https://github.com/user-attachments/assets/56dc2120-3de6-4d73-b4f7-130be0a202a3" />
 
@@ -107,12 +108,14 @@ to verify if it works enterr this command
 sudo ls -ld
 ```
 
-output
+### output
+
 <img width="591" alt="Screenshot 2025-02-17 at 00 52 14" src="https://github.com/user-attachments/assets/555adf71-b82d-4679-a2d1-e1b346be53b8" />
 
 this lists the permissions assigned to owner.
 
 drwxr-x--- : owner has full permission, group has 'read' and 'execute' perission.
+
 
 3.  Restricting SSH access for two of them, who should only log in locally.
    
@@ -122,7 +125,7 @@ drwxr-x--- : owner has full permission, group has 'read' and 'execute' perission
 sudo nano /etc/ssh/sshd_config
 ```
 
-output
+### output
 
 <img width="618" alt="Screenshot 2025-02-17 at 01 16 12" src="https://github.com/user-attachments/assets/d5865fb5-7a44-4bf5-a1df-d38e834da85d" />
 
@@ -132,7 +135,7 @@ output
 Deny user_name1 user_name2
 ```
 
-output
+### output
 
 <img width="599" alt="Screenshot 2025-02-17 at 01 16 58" src="https://github.com/user-attachments/assets/1f907335-46ac-493d-adad-2363faf8b3db" />
 
@@ -142,7 +145,7 @@ output
 sudo systemctl restart ssh
 ```
 
-output
+### output
 
 <img width="597" alt="Screenshot 2025-02-17 at 01 17 22" src="https://github.com/user-attachments/assets/eacb54ed-f6ff-40b8-84f7-433a440687f1" />
 
@@ -174,7 +177,7 @@ ps -p <PID> -o comm,args
 df -h #-h to read in a human understandable format
 ```
 
-output
+### output
 
 <img width="1090" alt="Screenshot 2025-02-17 at 01 58 52" src="https://github.com/user-attachments/assets/9af35015-4453-457f-b852-860b7684565f" />
 
@@ -184,7 +187,7 @@ output
 du -sh /var/log  #system log is stored in /var/log
 ```
 
-output
+### output
 
 <img width="598" alt="Screenshot 2025-02-17 at 01 59 24" src="https://github.com/user-attachments/assets/bfd969e0-ce02-4d6d-bfb8-e8d20bc27a91" />
 
@@ -199,7 +202,7 @@ this shows the total space used by the log
 sudo journalctl -f
 ```
 
-output
+### output
 
 <img width="618" alt="Screenshot 2025-02-17 at 02 05 59" src="https://github.com/user-attachments/assets/b34088fb-3297-49cc-830e-5e300e776f17" />
 
@@ -210,7 +213,7 @@ sudo journalctl -u ssh -f
 ```
 looking for multiple login attempt might indicate a brute force attack
 
-output
+### output
 
 <img width="613" alt="Screenshot 2025-02-17 at 02 09 54" src="https://github.com/user-attachments/assets/4f01c51c-3116-4059-8ba1-706bc4f393f8" />
 
@@ -250,7 +253,7 @@ The development team has requested the installation of Nginx for a new microserv
 sudo apt update && sudo apt install nginx -y
 ```
 
-output
+### output
 
 <img width="621" alt="Screenshot 2025-02-17 at 13 36 50" src="https://github.com/user-attachments/assets/76453a1e-0ee2-4d3e-a3b8-87bdb3be4cac" />
 
@@ -260,7 +263,7 @@ output
 sudo systemctl enable nginx
 ```
 
-output
+### output
 
 <img width="624" alt="Screenshot 2025-02-17 at 13 45 45" src="https://github.com/user-attachments/assets/e37e3f9f-1002-4691-8ee5-de1a0e0d61b6" />
 
@@ -273,7 +276,7 @@ output
 sudo systemctl status nginx
 ```
 
-output
+### output
 
 <img width="624" alt="Screenshot 2025-02-17 at 13 37 28" src="https://github.com/user-attachments/assets/aaac53a9-c599-480d-ba40-0581632ed5f4" />
 
@@ -300,7 +303,7 @@ RestartSec=5s
 - Restart=always → Ensures Nginx restarts after a failure.
 - RestartSec=5s → Waits 5 seconds before restarting.
 
-output
+### output
 
 <img width="601" alt="Screenshot 2025-02-17 at 14 08 57" src="https://github.com/user-attachments/assets/d43fb8be-6dfc-47cb-94c0-232decb91980" />
 
@@ -332,7 +335,7 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 ```
 
-output
+### output
 
 <img width="626" alt="Screenshot 2025-02-17 at 17 54 57" src="https://github.com/user-attachments/assets/e8923e01-ec4e-41b4-bf7c-0f5a33797df4" />
 
@@ -376,7 +379,7 @@ output
 sudo ss -tulnp
 ```
 
- output
+ ### output
 
  <img width="626" alt="Screenshot 2025-02-17 at 17 52 56" src="https://github.com/user-attachments/assets/15a056ca-06c1-490a-9038-f783c4b265eb" />
 
