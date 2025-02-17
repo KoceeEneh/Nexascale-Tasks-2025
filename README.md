@@ -20,6 +20,7 @@ this project, records detailed step to step approach on how i was able to carry 
 
 
 ### TASK 1 - User and Role managements 
+
 The company recently hired five new developers who need access to the development server. Your task is to:
 
 1.  Creating user accounts for them and add them to the developers group
