@@ -47,6 +47,7 @@ output
 
 <img width="628" alt="Screenshot 2025-02-16 at 20 49 35" src="https://github.com/user-attachments/assets/6c71aa66-1cfd-49bc-b7aa-09fe6a8fd49e" />
 
+
 + Step 2 - adding them to a group
 
 first create a group
