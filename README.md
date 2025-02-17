@@ -195,6 +195,20 @@ htop
 ```
 Looks for unexpected high CPU or memory usage.
 
++ Step 4 - Checking for unusual network connections
+```bash
+sudo netstat -tulnp
+sudo lsof -i  #looks for unkown program listening on port
+```
+
+output
+for unusual network connection
+<img width="620" alt="Screenshot 2025-02-17 at 02 17 36" src="https://github.com/user-attachments/assets/8dd4ef2d-0ff5-4ecd-b3c7-14cefb5817b7" />
+
+for unkown program listening on port
+<img width="620" alt="Screenshot 2025-02-17 at 02 19 04" src="https://github.com/user-attachments/assets/46b51c11-ec3a-465e-8e0a-3f52adc7b099" />
+
+
 ### TASK 3 - Application Management
 The development team has requested the installation of Nginx for a new microservice. They also need:
 
