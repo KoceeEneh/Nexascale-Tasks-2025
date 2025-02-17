@@ -14,6 +14,7 @@ this project, records detailed step to step approach on how i was able to carry 
 
 ## Challanges
 
+
 ### TASK 1 - User and Role managements 
 The company recently hired five new developers who need access to the development server. Your task is to:
 
@@ -202,10 +203,13 @@ sudo lsof -i  #looks for unkown program listening on port
 ```
 
 output
+
 for unusual network connection
+
 <img width="620" alt="Screenshot 2025-02-17 at 02 17 36" src="https://github.com/user-attachments/assets/8dd4ef2d-0ff5-4ecd-b3c7-14cefb5817b7" />
 
 for unkown program listening on port
+
 <img width="620" alt="Screenshot 2025-02-17 at 02 19 04" src="https://github.com/user-attachments/assets/46b51c11-ec3a-465e-8e0a-3f52adc7b099" />
 
 
