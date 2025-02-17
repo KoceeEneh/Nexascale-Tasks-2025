@@ -217,9 +217,35 @@ for unkown program listening on port
 The development team has requested the installation of Nginx for a new microservice. They also need:
 
 1.  The Nginx service to start automatically on boot
-+ Step 1
++ Step 1 - installing Nginx
+```bash
+sudo apt update && sudo apt install nginx -y
+```
+output
+
+<img width="621" alt="Screenshot 2025-02-17 at 13 36 50" src="https://github.com/user-attachments/assets/76453a1e-0ee2-4d3e-a3b8-87bdb3be4cac" />
+
++ Step 2 - start and enable Nginx
+```bash
+sudo systemctl enable nginx
+```
+
+output
+
+<img width="624" alt="Screenshot 2025-02-17 at 13 45 45" src="https://github.com/user-attachments/assets/e37e3f9f-1002-4691-8ee5-de1a0e0d61b6" />
+
 2.  A check to ensure it is running properly after installation.
-+ Step 1
+
+ checking if the service is running
+```bash
+sudo systemctl status nginx
+```
+
+output
+
+<img width="624" alt="Screenshot 2025-02-17 at 13 37 28" src="https://github.com/user-attachments/assets/aaac53a9-c599-480d-ba40-0581632ed5f4" />
+
+
 3.  The ability to restart it if it crashes.
 + Step 1
 
