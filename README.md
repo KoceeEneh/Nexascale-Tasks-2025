@@ -256,6 +256,27 @@ sudo mkdir -p /etc/systemd/system/nginx.service.d
 sudo nano /etc/systemd/system/nginx.service.d/restart.conf
 ```
 
+add these lines
+```bash
+[Service]
+Restart=always
+RestartSec=5s
+```
+- Restart=always → Ensures Nginx restarts after a failure.
+- RestartSec=5s → Waits 5 seconds before restarting.
+
+output
+
+<img width="601" alt="Screenshot 2025-02-17 at 14 08 57" src="https://github.com/user-attachments/assets/d43fb8be-6dfc-47cb-94c0-232decb91980" />
+
+
++ Step 2 - reload and restart nginx
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart nginx
+```
+
 ### TASK 4 - Networking and Security
 Security is a top priority at HypotheticalCorp.
 Your tasks are to configure these security measures on your Linux server:
