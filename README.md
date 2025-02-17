@@ -247,7 +247,14 @@ output
 
 
 3.  The ability to restart it if it crashes.
-+ Step 1
+   
+Systemd manages services in Kali Linux.i will be configuring it to automtically restart Nginx.
+
++ Step 1 - creating and editing the systemd overide file
+```bash
+sudo mkdir -p /etc/systemd/system/nginx.service.d
+sudo nano /etc/systemd/system/nginx.service.d/restart.conf
+```
 
 ### TASK 4 - Networking and Security
 Security is a top priority at HypotheticalCorp.
