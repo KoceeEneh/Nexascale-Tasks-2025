@@ -45,6 +45,7 @@ sudo addgroup group_name
 ```
 
 output
+
 <img width="621" alt="Screenshot 2025-02-16 at 23 39 18" src="https://github.com/user-attachments/assets/232cdeef-d925-4ac8-8ca2-f21db68f7b84" />
 
 after creating the group,you add them to it.
@@ -52,6 +53,7 @@ after creating the group,you add them to it.
 sudo usermod -aG group_name user_name
 ```
 output
+
 <img width="622" alt="Screenshot 2025-02-16 at 23 39 32" src="https://github.com/user-attachments/assets/d18dd340-d44c-4cb5-b6ad-e9b5cdfaee68" />
 
 lastly,verify that they are already in the group
@@ -59,6 +61,7 @@ lastly,verify that they are already in the group
 groups user_name
 ```
 output
+
 <img width="620" alt="Screenshot 2025-02-16 at 23 40 13" src="https://github.com/user-attachments/assets/f14e2553-bbdb-4cc8-8443-d38a076ca7d0" />
 
 2.  Ensureing they have read and execute permission for _/var/www/project_ but cannot modify files
@@ -93,17 +96,104 @@ this lists the permissions assigned to owner.
 drwxr-x--- : owner has full permission, group has 'read' and 'execute' perission.
 
 3.  Restricting SSH access for two of them, who should only log in locally.
-+ Step 1
+   
++ Step 1 - edit the ssh config file
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+
+output
+
+<img width="618" alt="Screenshot 2025-02-17 at 01 16 12" src="https://github.com/user-attachments/assets/d5865fb5-7a44-4bf5-a1df-d38e834da85d" />
+
++ Step 2 - add the following to the configuration file
+```bash
+Deny user_name1 user_name2
+```
+
+output
+
+<img width="599" alt="Screenshot 2025-02-17 at 01 16 58" src="https://github.com/user-attachments/assets/1f907335-46ac-493d-adad-2363faf8b3db" />
+
++ Step 3 - restart ssh to save the changes and apply them.
+```bash
+sudo systemctl restart ssh
+```
+
+output
+
+<img width="597" alt="Screenshot 2025-02-17 at 01 17 22" src="https://github.com/user-attachments/assets/eacb54ed-f6ff-40b8-84f7-433a440687f1" />
+
 
 ### TASK 2 - System Monitoring & Performance Analysis
 The team has been receiving complaints about server slowness during peak hours. You suspect a process might be consuming too many resources. Your tasks are:
 
 1.  To identify the top resource-consuming process and determine if it is necessary.
-+ Step 1
++ Step 1 - to check for resource-consuming process we use the Top comd
+
+```bash
+top
+htop #use if installed, has a more freindly user-interface
+```
+
++Step 2 - determine if its necessary by running there commands
+
+```bash
+ps -p <PID> -o comm,args
+```
+
 2.  To check the disk usage to ensure logs are not consuming too much space.
-+ Step 1
+   
++ Step 1 - to check the disk usage run
+
+```bash
+df -h #-h to read in a human understandable format
+```
+
+output
+
+<img width="1090" alt="Screenshot 2025-02-17 at 01 58 52" src="https://github.com/user-attachments/assets/9af35015-4453-457f-b852-860b7684565f" />
+
++ Step 2 - checking the size in system log
+
+```bash
+du -sh /var/log  #system log is stored in /var/log
+```
+
+output
+
+<img width="598" alt="Screenshot 2025-02-17 at 01 59 24" src="https://github.com/user-attachments/assets/bfd969e0-ce02-4d6d-bfb8-e8d20bc27a91" />
+this shows the total space used by the log
+
 3.  Monitor real-time system logs to detect anomalies.
-+ Step 1
+
++ Step 1 - Using journalctl to monitor system logs in real time
+
+```bash
+sudo journalctl -f
+```
+
+output
+
+<img width="618" alt="Screenshot 2025-02-17 at 02 05 59" src="https://github.com/user-attachments/assets/b34088fb-3297-49cc-830e-5e300e776f17" />
+
++ Step 2 - also checking for failed SSH login attempt
+
+```bash
+sudo journalctl -u ssh -f
+```
+looking for multiple login attempt might indicate a brute force attack
+
+output
+
+<img width="613" alt="Screenshot 2025-02-17 at 02 09 54" src="https://github.com/user-attachments/assets/4f01c51c-3116-4059-8ba1-706bc4f393f8" />
+
++ Step 3 - Useing top or htop to detect CPU-heavy anomalies
+```bash
+top
+htop
+```
+Looks for unexpected high CPU or memory usage.
 
 ### TASK 3 - Application Management
 The development team has requested the installation of Nginx for a new microservice. They also need:
