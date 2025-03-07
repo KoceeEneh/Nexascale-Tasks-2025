@@ -18,6 +18,8 @@ This assignment focuses on Git and GitHub basics, including version control, col
 
 ``` bash
 git clone https://github.com/NexaScaleHQ/cloud-titans-project-1.git
+
+
 ```
 
 
@@ -26,6 +28,8 @@ git clone https://github.com/NexaScaleHQ/cloud-titans-project-1.git
 
 ``` bash
 git branch documentaton-update
+
+
 ```
 
 
@@ -40,6 +44,8 @@ git branch documentaton-update
 
 ``` bash
 git commit -m "commit message"
+
+
 ```
 
 
@@ -48,6 +54,8 @@ git commit -m "commit message"
 
 ``` bash
 git push origin documentation-updatd
+
+
 ```
 
 
