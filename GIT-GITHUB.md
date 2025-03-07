@@ -67,7 +67,7 @@ git push origin documentation-updatd
 ```
 
 
-9. Create a pull request to the original repository (do this on your github interface if you are not familiar with github cli) <br/>
+9. Create a pull request to the original repository (do this on your github interface if you are not familiar with github cli)/
     
 
  <img width="1025" alt="Screenshot 2025-03-08 at 00 25 35" src="https://github.com/user-attachments/assets/a91695f9-a995-4af7-b185-ff451880d242" />
