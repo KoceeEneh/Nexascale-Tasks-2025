@@ -17,6 +17,8 @@ This assignment focuses on Git and GitHub basics, including version control, col
    
 
 ``` bash
+
+
 git clone https://github.com/NexaScaleHQ/cloud-titans-project-1.git
 
 
@@ -27,6 +29,8 @@ git clone https://github.com/NexaScaleHQ/cloud-titans-project-1.git
    
 
 ``` bash
+
+
 git branch documentaton-update
 
 
@@ -43,6 +47,8 @@ git branch documentaton-update
    
 
 ``` bash
+
+
 git commit -m "commit message"
 
 
@@ -53,6 +59,8 @@ git commit -m "commit message"
 
 
 ``` bash
+
+
 git push origin documentation-updatd
 
 
@@ -62,7 +70,7 @@ git push origin documentation-updatd
 9. Create a pull request to the original repository (do this on your github interface if you are not familiar with github cli)
     
 
-<img width="1025" alt="Screenshot 2025-03-08 at 00 25 35" src="https://github.com/user-attachments/assets/a91695f9-a995-4af7-b185-ff451880d242" />
+\n <img width="1025" alt="Screenshot 2025-03-08 at 00 25 35" src="https://github.com/user-attachments/assets/a91695f9-a995-4af7-b185-ff451880d242" />
 
 
 
