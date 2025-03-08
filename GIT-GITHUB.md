@@ -216,7 +216,15 @@ git push origin documentation-updatd
     
 
  <img width="1025" alt="Screenshot 2025-03-08 at 00 25 35" src="https://github.com/user-attachments/assets/a91695f9-a995-4af7-b185-ff451880d242" />
+ 
+--- 
 
+# Resources
+
+- TASK 1 - https://github.com/KoceeEneh/nexascale_decsecops
+- TASK 2 - https://github.com/cliuzy/Team-collaboration
+- TASK 3 - https://github.com/KoceeEneh/Merge-Conflict-Task3
+- TASK 4 - https://github.com/KoceeEneh/cloud-titans-project-1
 
 
 
