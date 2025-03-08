@@ -60,7 +60,8 @@ git push origin feature-update
 
 # **TASK 2 - Team collabration**
 
-1. for this task i collaborated with @cliuzy
+1. for this task i collaborated with [@cliuzy](https://github.com/cliuzy)
+
 2. created a repository and added me as a collaborator
    
 4. The collaborator should clone the repo, create a new branch `update-styles`, and modify index.html by adding a <style> section.
