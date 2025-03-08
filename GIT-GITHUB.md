@@ -21,9 +21,9 @@ This assignment focuses on Git and GitHub basics, including version control, col
 
 2. Clone the repository locally ( replace with the repo you created )
 
-   ``` bash
+``` bash
    git clone https://github.com/KoceeEneh/nexascale_decsecops.git
-   ```
+```
    
 3. Create a new branch called `feature-update`
 
@@ -50,11 +50,11 @@ git push origin feature-update
 
    - open pull request
   
-  <img width="1024" alt="Screenshot 2025-03-08 at 16 46 17" src="https://github.com/user-attachments/assets/d19f9956-b5c0-4ef7-a5b3-be5ec8cb6391" />
+<img width="1024" alt="Screenshot 2025-03-08 at 16 46 17" src="https://github.com/user-attachments/assets/d19f9956-b5c0-4ef7-a5b3-be5ec8cb6391" />
 
    - merged pull request
 
-  <img width="1015" alt="Screenshot 2025-03-08 at 16 46 41" src="https://github.com/user-attachments/assets/a1c03afb-0444-451d-8ee1-36f3e34c1f4f" />
+<img width="1015" alt="Screenshot 2025-03-08 at 16 46 41" src="https://github.com/user-attachments/assets/a1c03afb-0444-451d-8ee1-36f3e34c1f4f" />
 
 ---
 
