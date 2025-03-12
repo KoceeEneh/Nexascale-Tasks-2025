@@ -1,0 +1,6 @@
+INFO: Application started
+ERROR: Something went wrong
+INFO: Application stopped
+ERROR: Another error occurred
+DEBUG: Debugging information
+ERROR: Yet another error
